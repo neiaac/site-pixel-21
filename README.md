@@ -4,6 +4,7 @@ Desenvolvimento do website da edição de 2021 do Pixel D'Ouro.
 Após ter o python3 instalado, seguir os proximos passos.
 ### Virtual environment (windows): 
 Inicializar:
+- ~$ cd "C://Users/[...]/RepoFolder/"
 - ~$ python3 -m venv [venv-name]
 
 Ativar:
