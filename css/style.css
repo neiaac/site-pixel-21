@@ -44,29 +44,21 @@
 }
 
 .vencedores-anteriores>p {
-    font-size: 36px;
-    line-height: 46px;
-    margin-bottom: 32px;
+    padding-left: 1.1em;
+    font-size: 300%;
+    padding-bottom: 1em;
     align-self: flex-start;
 }
 
 .vencedores {
     display: grid;
     grid: 1fr/ repeat(4, 1fr);
-    width: 100%;
+    width: 92%;
 }
 
-.vencedores img {
-    width: 100%;
-}
-
-.vencedores>p {
+.vencedores img, .vencedores>p {
+    width: 75%;
     text-align: center;
-}
-
-.vencedores-anteriores>img {
-    margin-top: 26vh;
-    align-self: flex-start;
 }
 
 .partners>img {
@@ -75,6 +67,7 @@
 
 .parceiros {
     display: grid;
+    align-content: left;
     grid-template-columns: repeat(10, 50px);
     grid-template-rows: repeat(6, 50px);
     grid-column-gap: 8px;
