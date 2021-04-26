@@ -1,0 +1,36 @@
+section{
+    height: initial;
+}
+.nomeados-title{
+    margin: 20vh 0 15vh;
+    
+}
+
+.categorias {
+    display: grid;
+    grid: 1fr/ repeat(5, 1fr);
+    width: 100%;
+    justify-items: center;
+    color: white;
+}
+
+
+.grelhas-categorias {
+    display: grid;
+    grid: 1fr/ repeat(4, 1fr);
+    width: 100%;
+    justify-items: center;
+}
+
+section > img:not(.nomeados-title){
+    margin: 10vh 0 5vh;
+}
+.grelhas-categorias div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grelhas-categorias:last-child{
+    margin-bottom: 10vh;
+}
