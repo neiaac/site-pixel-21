@@ -1,0 +1,90 @@
+section{
+    height: initial;
+    display: block;
+    text-align: center;
+}
+
+.description {
+    width: 60%;
+    margin: 2rem auto 10rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.nominees {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    margin-bottom: 10rem;
+}
+
+.nominees div {
+    width: 100%;
+}
+
+.past img, .nominees img {
+    border: 0.25rem solid;
+    border-image: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%) 1;
+}
+
+.past p, .nominees p {
+    margin-top: 1rem;
+}
+
+.past {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.past div:first-child {
+    margin-right: 2rem;
+}
+
+.past img {
+    width: 12rem;
+    height: 12rem;
+}
+
+.past div:last-child img {
+    border: 0.25rem solid black;
+}
+
+.partners > div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;  
+}
+
+.partners > div > button {
+    width: 12rem;
+    height: 12rem;
+    display: grid;
+    place-items: center;
+    margin: 0 1rem;
+    border: 0.25rem solid;
+    border-image: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%) 1;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.partners div img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.partners .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.partners > div > button.active {
+    opacity: 1;
+}
