@@ -1,0 +1,126 @@
+.hero img {
+    width: 80%;
+    margin: auto;
+}
+
+.gala > div{
+    display: grid;
+    gap: 2rem 6rem;
+    grid: auto 1fr / 1fr 1fr;
+
+}
+
+.gala > div > div p:first-child {
+    margin-bottom: 2rem;
+}
+
+.gala img {
+    width: 100%;
+}
+
+.rules > div {
+    display: grid;
+    gap: 2rem 6em;
+    grid: auto auto 1fr / 1fr 1fr;
+}
+
+.rules > div > div:nth-child(-n + 2) {
+    margin-bottom: 2rem;
+}
+
+.rules h3 {
+   margin-bottom: 2rem;
+}
+
+.rules p {
+    width: 75%;
+    border-left: 0.25rem solid;
+    border-image: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%) 1;
+    padding-left: 1rem;
+}
+
+.winners > div {
+    display: grid;
+    gap: 2rem;
+    grid: 1fr / repeat(auto-fit, minmax(5rem, 1fr));
+    text-align: center;
+}
+
+.winners img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.partners > div {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+                        "redlight redlight redlight redlight critical critical critical imaginary imaginary imaginary"
+                        "redlight redlight redlight redlight critical critical critical imaginary imaginary imaginary"
+                        "oreyeon oreyeon feedzai feedzai bit bit ubiwhere ubiwhere esa esa"
+                        "oreyeon oreyeon feedzai feedzai bit bit ubiwhere ubiwhere esa esa";
+    margin-bottom: 2rem;
+}
+
+.partners > div > div {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border: 0.25rem solid;
+    border-image: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%) 1;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.partners img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.redlight {
+    grid-area: redlight;
+}
+
+.celfocus {
+    grid-area: celfocus;
+}
+
+.critical {
+    grid-area: critical;
+}
+
+.imaginary {
+    grid-area: imaginary;
+}
+
+.oreyeon {
+    grid-area: oreyeon;
+}
+
+.feedzai {
+    grid-area: feedzai;
+}
+
+.bit {
+    grid-area: bit;
+}
+
+.ubiwhere {
+    grid-area: ubiwhere;
+}
+
+.esa {
+    grid-area: esa;
+}
+
+.empty {
+    grid-area: empty;
+}

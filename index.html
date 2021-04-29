@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixel D'Ouro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagens/small_logo.png" alt="logo">
+        </a>
+        <nav>
+            <a href="nominees.html">Nomeados</a>
+            <a href="past.html">Edições Anteriores</a>
+            <a href="partners.html">Parceiros</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <img src="/imagens/hero.svg" alt="Logo Pixel">
+    </section>
+    <section class="gala">
+        <h2>Gala Pixel d’Ouro</h2>
+        <div class="gala">
+            <div>
+                <p>
+                    A Gala Pixel d’Ouro é um evento que visa reconhecer os estudantes
+                    representados pelo Núcleo de Estudantes de Informática da Associação Académica de Coimbra (NEI/AAC),
+                    promover projectos de investigação e outros projectos ou indivíduos que tenham tido um impacto
+                    positivo no Departamento de Engenharia Informática (DEI).
+                </p>
+                <p>
+                    A cerimónia, que já vai na sua 10ª edição, é dirigida a toda a comunidade
+                    do Departamento de Engenharia Informática sendo composta por um jantar e a respectiva entrega de
+                    prémios.
+                    Gostaríamos de contar com a tua presença neste evento que continua a ganhar mais adeptos, ano após
+                    ano!
+                </p>
+            </div>
+            <img src="/imagens/foto grupo 1.png">
+        </div>
+    </section>
+    <section class="rules">
+        <h2>Critérios</h2>
+        <div>
+            <div>
+                <h3>Calorios do Ano</h3>
+                <p>Para a categoria de "Caloiro do Ano" serão nomeados alunos se matriculados pela primeira vez no
+                    Ensino Superior e fazendo parte do curso de Engenharia Informática ou Design e Multimédia.</p>
+            </div>
+            <div>
+                <h3>Personalidade do Ano</h3>
+                <p>Para a categoria de "Personalidade do Ano" será nomeada alguma figura que foi marcante de forma
+                    positiva na ou para a comunidade do Departamento de Engenharia Informática.</p>
+            </div>
+            <div>
+                <h3>Docente do Ano</h3>
+                <p>Para a categoria de “Docente do Ano” será nomeado um docente que tenha leccionado uma unidade
+                    curricular no presente ano lectivo no Departamento de Engenharia Informática e não tiver vencido a
+                    respectiva categoria nos últimos três anos lectivos.</p>
+            </div>
+            <div>
+                <h3>Funcionário do Ano</h3>
+                <p>Para a categoria de "Funcionário do Ano" será nomeado pessoal não docente tendo executado funções no
+                    presente ano lectivo no Departamento de Engenharia Informática e não tiver vencido a respectiva
+                    categoria nos últimos dois anos lectivos.</p>
+            </div>
+        </div>
+    </section>
+    <section class="winners">
+        <h2>Vencedores de Edições Passadas</h2>
+        <div>
+            <div>
+                <img src="/imagens/Sofia Meireles 1.png">
+                <p>Caloiros</p>
+            </div>
+            <div>
+                <img src="/imagens/Ernesto Costa 1.png">
+                <p>Docentes</p>
+            </div>
+            <div>
+                <img src="/imagens/Dona Joana 1.png">
+                <p>Funcionários</p>
+            </div>
+            <div>
+                <img src="/imagens/Manuel Matos 1.png">
+                <p>Personalidades</p>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <h2>Parceiros</h2>
+        <div>
+            <div class="redlight">
+                <img src="/imagens/sponsors/redlight.png">
+            </div>
+            <div class="celfocus">
+                <img src="/imagens/sponsors/celfocus.png">
+            </div>
+            <div class="critical">
+                <img src="/imagens/sponsors/critical.png">
+            </div>
+            <div class="imaginary">
+                <img src="/imagens/sponsors/imaginary.svg">
+            </div>
+            <div class="oreyeon">
+                <img src="/imagens/sponsors/oreyeon.png">
+            </div>
+            <div class="feedzai">
+                <img src="/imagens/sponsors/feedzai.png">
+            </div>
+            <div class="bit">
+                <img src="/imagens/sponsors/bit.png">
+            </div>
+            <div class="ubiwhere">
+                <img src="/imagens/sponsors/ubiwhere.png">
+            </div>
+            <div class="esa">
+                <img src="/imagens/sponsors/esa.png">
+            </div>
+        </div>
+        <a href="partners.html">Descobre mais</a>
+    </section>
+    <footer>
+        <p>Made with ❤ by NEI/AAC</p>
+    </footer>
+    <script>$(window).on("load",function() {
+        function fade(pageLoad) {
+          var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
+          var min=0, max=1, threshold=0.01;
+          
+          $("section").each(function() {
+            /* Check the location of each desired element */
+            var objectHeight=$(this).outerHeight(), objectTop=$(this).offset().top, objectBottom=$(this).offset().top+objectHeight;
+            
+            /* Fade element in/out based on its visible percentage */
+            if (objectTop < windowTop) {
+              if (objectBottom > windowTop) {$(this).fadeTo(0,min+((max-min)*((objectBottom-windowTop)/objectHeight)));}
+              else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
+            } else if (objectBottom > windowBottom) {
+              if (objectTop < windowBottom) {$(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
+              else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
+            } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);}
+          });
+        } fade(true); //fade elements on page-load
+        $(window).scroll(function(){fade(false);}); //fade elements on scroll
+      });</script>
+</body>
+
+</html>

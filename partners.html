@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edições Anteriores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/others.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagens/small_logo.png" alt="logo">
+        </a>
+        <nav>
+            <a href="nominees.html">Nomeados</a>
+            <a href="past.html">Edições Anteriores</a>
+            <a href="partners.html">Parceiros</a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Parceiros</h1>
+        <p class="description">Fica a conhecer os parceiros que tornaram esta gala possível!</p>
+        <div class="partners">
+          <div>
+            <button class="active">
+              <img src="/imagens/sponsors/redlight.png">
+            </button>   
+          </div>
+          <p class="description">A RedLight é uma empresa de desenvolvimento de software sediada em Coimbra e a sua missão é ajudar outras empresas a criar produtos de software de sucesso, numa relação colaborativa e com a máxima transparência e uma excelente comunicação com o cliente.</p>
+        </div>
+        <div class="partners">
+          <div>
+            <button class="active">
+              <img src="/imagens/sponsors/critical.png">
+            </button>
+            <button>
+              <img src="/imagens/sponsors/imaginary.svg">
+            </button>
+          </div>
+          <p class="description" id="silver">A Critical Software é uma empresa de software, sistemas de informação e de implantação internacional portuguesa, especializada em oferecer soluções, serviços e tecnologias fiáveis para sistemas de informação.</p>
+        </div>
+        <div class="partners">
+          <div>
+            <button class="active">
+              <img class="active" src="/imagens/sponsors/bit.png">
+            </button>
+            <button>
+              <img src="/imagens/sponsors/esa.png">
+            </button>
+            <button>
+              <img src="/imagens/sponsors/feedzai.png">
+            </button>
+            <button>
+              <img src="/imagens/sponsors/ubiwhere.png">
+            </button>
+            <button>
+              <img src="/imagens/sponsors/oreyeon.png">
+            </button>
+          </div>
+          <p class="description" id="bronze">A BIT (Business Information Technology), área de Sistemas de Informação da Sonae MC, é responsável por criar novas soluções tecnológicas, e tem como objetivo contribuir para a evolução da experiência de retalho dos seus clientes.</p>
+        </div>
+        <div class="partners">
+          <div>
+            <button class="active">
+              <img src="/imagens/sponsors/celfocus.png">
+            </button>
+          </div>
+          <p class="description">A Celfocus é uma empresa cujo principal objetivo é desenvolver soluções tecnológicas para que os seus clientes passem pela sua Transformação Digital, de modo a que estes enfrentem os mais inovadores e complexos desafios.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Made with ❤ by NEI/AAC</p>
+    </footer>
+</body>
+
+<script>
+ $(document).ready(function () {
+  $("button").on('click', function (event) {
+      target = $(event.target);
+      if(target.is("button")) {
+        target.parent().children().removeClass("active");
+        target.addClass("active");
+      } else {
+        target.parent().parent().children().removeClass("active");
+        target.parent().addClass("active");
+      }
+    });
+})

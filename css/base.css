@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    color: #E9DBA8;
+    background: black;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1, h2, h3, h4, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    min-height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+p, a {
+    font: 20px/26px Frank Ruhl Libre;
+}
+
+h1, h2, h3, h4 {
+    background: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+  
+a {
+    width: fit-content;
+    color: #E9DBA8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 2rem auto;
+}
+  
+header img {
+    width: 3rem;
+}
+
+header nav a {
+    margin: 0 1rem;
+}
+
+header nav a:first-child {
+    margin-left: 0;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+  
+footer {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    background: linear-gradient(180deg, #FDF8C1 -24.64%, #FFE996 40.98%, #A47528 209.44%, #FFE996 349.31%, #FDF8C1 377.77%);
+    color: black;
+}
