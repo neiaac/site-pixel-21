@@ -36,9 +36,41 @@
     </nav>
     <section>
         <h1>Nomeados</h1>
-        <p class="description">Preenche o form com as tuas sugestões para as várias categorias desta edição especial do Pixel D’Ouro!</p>
+        <p class="description">Preenche o form com as tuas sugestões para as várias categorias desta edição especial do
+            Pixel D’Ouro!</p>
         <!--<p class="description">Conhece os nomeados para todas as categorias nesta edição especial do Pixel D’Ouro!</p>-->
-        <div class="form" id="ss_survey_widget"></div><script>(function(){var e="ss-widget",t="script",a=document,r=window;var s,n,c;r.SS_WIDGET_TOKEN="tt-b9cc8d";r.SS_ACCOUNT="pixeldouro2021nomeacoes.surveysparrow.com";r.SS_SURVEY_NAME="Nomeaes---Pixel-dOuro-2021";if(!a.getElementById(e)){var S=function(){S.update(arguments)};S.args=[];S.update=function(e){S.args.push(e)};r.SparrowLauncher=S;s=a.getElementsByTagName(t);c=s[s.length-1];n=a.createElement(t);n.type="text/javascript";n.async=!0;n.id=e;n.src=["https://","pixeldouro2021nomeacoes.surveysparrow.com/widget/",r.SS_WIDGET_TOKEN].join("");c.parentNode.insertBefore(n,c)}})();</script> 
+        <div class="form" id="ss_survey_widget"></div>
+        <script>
+            (function () {
+                var e = "ss-widget",
+                    t = "script",
+                    a = document,
+                    r = window;
+                var s, n, c;
+                r.SS_WIDGET_TOKEN = "tt-b9cc8d";
+                r.SS_ACCOUNT = "pixeldouro2021nomeacoes.surveysparrow.com";
+                r.SS_SURVEY_NAME = "Nomeaes---Pixel-dOuro-2021";
+                if (!a.getElementById(e)) {
+                    var S = function () {
+                        S.update(arguments)
+                    };
+                    S.args = [];
+                    S.update = function (e) {
+                        S.args.push(e)
+                    };
+                    r.SparrowLauncher = S;
+                    s = a.getElementsByTagName(t);
+                    c = s[s.length - 1];
+                    n = a.createElement(t);
+                    n.type = "text/javascript";
+                    n.async = !0;
+                    n.id = e;
+                    n.src = ["https://", "pixeldouro2021nomeacoes.surveysparrow.com/widget/", r.SS_WIDGET_TOKEN]
+                        .join("");
+                    c.parentNode.insertBefore(n, c)
+                }
+            })();
+        </script>
         <!-- <h2 id="caloiroLDM">Caloiro do Ano LDM</h2>
         <div class="nominees">
             <div>
@@ -154,5 +186,45 @@
             $("html").css("overflow-y", "scroll");
         }
         temp++;
+    });
+
+    $(window).on("load", function () {
+        function fade(pageLoad) {
+            var windowTop = $(window).scrollTop(),
+                windowBottom = windowTop + $(window).innerHeight();
+            var min = 0,
+                max = 1,
+                threshold = 0.01;
+
+            $(".nominees , h2").each(function () {
+                /* Check the location of each desired element */
+                var objectHeight = $(this).outerHeight(),
+                    objectTop = $(this).offset().top,
+                    objectBottom = $(this).offset().top + objectHeight;
+
+                /* Fade element in/out based on its visible percentage */
+                if (objectTop < windowTop) {
+                    if (objectBottom > windowTop) {
+                        $(this).fadeTo(0, min + ((max - min) * ((objectBottom - windowTop) /
+                            objectHeight)));
+                    } else if ($(this).css("opacity") >= min + threshold || pageLoad) {
+                        $(this).fadeTo(0, min);
+                    }
+                } else if (objectBottom > windowBottom) {
+                    if (objectTop < windowBottom) {
+                        $(this).fadeTo(0, min + ((max - min) * ((windowBottom - objectTop) /
+                            objectHeight)));
+                    } else if ($(this).css("opacity") >= min + threshold || pageLoad) {
+                        $(this).fadeTo(0, min);
+                    }
+                } else if ($(this).css("opacity") <= max - threshold || pageLoad) {
+                    $(this).fadeTo(0, max);
+                }
+            });
+        }
+        fade(true); //fade elements on page-load
+        $(window).scroll(function () {
+            fade(false);
+        }); //fade elements on scroll
     });
 </script>
