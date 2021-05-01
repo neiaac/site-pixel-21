@@ -4,9 +4,11 @@
 <head>
     <title>Pixel D'Ouro - Nomeados</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/others.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,10 +23,23 @@
             </ul>
         </nav>
     </header>
+    <nav class="mobile">
+        <a href="index.html">
+            <img src="imagens/small_logo.png" alt="logo">
+        </a>
+        <img id="mobile" src="imagens/hamburguer.svg" alt="Open Navbar">
+        <div id="mobile-navbar">
+            <a href="nominees.html">Nomeados</a>
+            <a href="past.html">Edições Anteriores</a>
+            <a href="partners.html">Parceiros</a>
+        </div>
+    </nav>
     <section>
         <h1>Nomeados</h1>
-        <p class="description">Conhece os nomeados para todas as categorias nesta edição especial do Pixel D’Ouro!</p>
-        <h2 id="caloiroLDM">Caloiro do Ano LDM</h2>
+        <p class="description">Preenche o form com as tuas sugestões para as várias categorias desta edição especial do Pixel D’Ouro!</p>
+        <!--<p class="description">Conhece os nomeados para todas as categorias nesta edição especial do Pixel D’Ouro!</p>-->
+        <div class="form" id="ss_survey_widget"></div><script>(function(){var e="ss-widget",t="script",a=document,r=window;var s,n,c;r.SS_WIDGET_TOKEN="tt-b9cc8d";r.SS_ACCOUNT="pixeldouro2021nomeacoes.surveysparrow.com";r.SS_SURVEY_NAME="Nomeaes---Pixel-dOuro-2021";if(!a.getElementById(e)){var S=function(){S.update(arguments)};S.args=[];S.update=function(e){S.args.push(e)};r.SparrowLauncher=S;s=a.getElementsByTagName(t);c=s[s.length-1];n=a.createElement(t);n.type="text/javascript";n.async=!0;n.id=e;n.src=["https://","pixeldouro2021nomeacoes.surveysparrow.com/widget/",r.SS_WIDGET_TOKEN].join("");c.parentNode.insertBefore(n,c)}})();</script> 
+        <!-- <h2 id="caloiroLDM">Caloiro do Ano LDM</h2>
         <div class="nominees">
             <div>
                 <img src="/imagens/Ernesto Costa 1.png">
@@ -118,10 +133,26 @@
                 <img src="/imagens/Ernesto Costa 1.png">
                 <p>???</p>
             </div>
-        </div>
+        </div> -->
     </section>
     <footer>
         <p>Made with ❤ by NEI/AAC</p>
     </footer>
+</body>
 
 </html>
+<script>
+    var temp = 0;
+    $("#mobile").click(function () {
+        if (temp % 2 == 0) {
+            $("#mobile-navbar").css("display", "flex");
+            $("#mobile").attr("src", "imagens/close.svg");
+            $("html").css("overflow-y", "hidden");
+        } else {
+            $("#mobile-navbar").css("display", "none");
+            $('#mobile').attr('src', 'imagens/hamburguer.svg');
+            $("html").css("overflow-y", "scroll");
+        }
+        temp++;
+    });
+</script>

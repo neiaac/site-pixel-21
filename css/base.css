@@ -12,11 +12,7 @@ h1, h2, h3, h4, ul, p {
 
 section {
     width: 70%;
-    margin: auto;
-    min-height: 90vh;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+    margin: 15rem auto;
 }
 
 p, a {
@@ -75,12 +71,88 @@ header nav a:first-child {
 header nav a:last-child {
     margin-right: 0;
 }
+
+.mobile {
+    width: 85%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+.mobile a {
+    z-index: 10;
+}
+
+.mobile img {
+    z-index: 10;
+    width: 2rem;
+    cursor: pointer;
+}
+
+#mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#mobile-navbar a {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#mobile-navbar a:last-child {
+    margin-bottom: 0;
+}
+
   
 footer {
     display: grid;
     place-items: center;
     padding: 2rem;
-    margin-top: 4rem;
     background: linear-gradient(180deg, #FDF8C1 -24.64%, #FFE996 40.98%, #A47528 209.44%, #FFE996 349.31%, #FDF8C1 377.77%);
     color: black;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    section {
+        width: 85%;
+        margin: 10rem auto;
+    }
+
+    p, a {
+        font: 1rem/1.5rem Frank Ruhl Libre;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
 }

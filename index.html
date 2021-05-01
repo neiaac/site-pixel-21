@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,9 +19,19 @@
             <a href="nominees.html">Nomeados</a>
             <a href="past.html">Edições Anteriores</a>
             <a href="partners.html">Parceiros</a>
-            </ul>
         </nav>
     </header>
+    <nav class="mobile">
+        <a href="index.html">
+            <img src="imagens/small_logo.png" alt="logo">
+        </a>
+        <img id="mobile" src="imagens/hamburguer.svg" alt="Open Navbar">
+        <div id="mobile-navbar">
+            <a href="nominees.html">Nomeados</a>
+            <a href="past.html">Edições Anteriores</a>
+            <a href="partners.html">Parceiros</a>
+        </div>
+    </nav>
     <section class="hero">
         <img src="/imagens/hero.svg" alt="Logo Pixel">
     </section>
@@ -41,8 +52,9 @@
                     Gostaríamos de contar com a tua presença neste evento que continua a ganhar mais adeptos, ano após
                     ano!
                 </p>
+                <a href="#">Ver regulamento</a>
             </div>
-            <img src="/imagens/foto grupo 1.png">
+            <img src="/imagens/foto-gala.png">
         </div>
     </section>
     <section class="rules">
@@ -132,3 +144,18 @@
 </body>
 
 </html>
+<script>
+var temp = 0;
+$("#mobile").click(function () {
+    if (temp % 2 == 0) {
+        $("#mobile-navbar").css("display", "flex");
+        $("#mobile").attr("src", "imagens/close.svg");
+        $("html").css("overflow-y", "hidden");
+    } else {
+        $("#mobile-navbar").css("display", "none");
+        $('#mobile').attr('src', 'imagens/hamburguer.svg');
+        $("html").css("overflow-y", "scroll");
+    }
+    temp++;
+});
+</script>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/others.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,9 +21,21 @@
             </ul>
         </nav>
     </header>
+    <nav class="mobile">
+        <a href="index.html">
+            <img src="imagens/small_logo.png" alt="logo">
+        </a>
+        <img id="mobile" src="imagens/hamburguer.svg" alt="Open Navbar">
+        <div id="mobile-navbar">
+            <a href="nominees.html">Nomeados</a>
+            <a href="past.html">Edições Anteriores</a>
+            <a href="partners.html">Parceiros</a>
+        </div>
+    </nav>
     <section>
         <h1>Edições Anteriores</h1>
-        <p class="description">Este ano, a gala é diferente porém o sentimento é o mesmo.<br>Confere os melhores momentos do Pixel D’Ouro nos anos anteriores.</p>
+        <p class="description">Este ano, a gala é diferente porém o sentimento é o mesmo.<br>Confere os melhores
+            momentos do Pixel D’Ouro nos anos anteriores.</p>
         <h2 id="2019">2019</h2>
         <div class="past">
             <div>
@@ -30,8 +43,8 @@
                 <p>Álbum de Fotos</p>
             </div>
             <div>
-                <a href="#"><img src="/imagens/small_logo.png"></a>
-                <p>Nomeados e Vencedores</p>
+                <a href="https://nei.dei.uc.pt/pixeldouro/2019"><img src="/imagens/small_logo.png"></a>
+                <p>Site</p>
             </div>
         </div>
         <h2 id="2018">2018</h2>
@@ -41,8 +54,8 @@
                 <p>Álbum de Fotos</p>
             </div>
             <div>
-                <a href="#"><img src="/imagens/small_logo.png"></a>
-                <p>Nomeados e Vencedores</p>
+                <a href="https://nei.dei.uc.pt/pixeldouro/2018"><img src="/imagens/small_logo.png"></a>
+                <p>Site</p>
             </div>
         </div>
         <h2 id="2017">2017</h2>
@@ -52,8 +65,8 @@
                 <p>Álbum de Fotos</p>
             </div>
             <div>
-                <a href="#"><img src="/imagens/small_logo.png"></a>
-                <p>Nomeados e Vencedores</p>
+                <a href="https://nei.dei.uc.pt/pixeldouro/2017"><img src="/imagens/small_logo.png"></a>
+                <p>Site</p>
             </div>
         </div>
         <h2 id="2016">2016</h2>
@@ -63,8 +76,8 @@
                 <p>Álbum de Fotos</p>
             </div>
             <div>
-                <a href="#"><img src="/imagens/small_logo.png"></a>
-                <p>Nomeados e Vencedores</p>
+                <a href="https://nei.dei.uc.pt/pixeldouro/2016"><img src="/imagens/small_logo.png"></a>
+                <p>Site</p>
             </div>
         </div>
         <h2 id="2015">2015</h2>
@@ -74,8 +87,8 @@
                 <p>Álbum de Fotos</p>
             </div>
             <div>
-                <a href="#"><img src="/imagens/small_logo.png"></a>
-                <p>Nomeados e Vencedores</p>
+                <a href="https://nei.dei.uc.pt/pixeldouro/2015"><img src="/imagens/small_logo.png"></a>
+                <p>Site</p>
             </div>
         </div>
         <h2 id="2014">2014</h2>
@@ -85,8 +98,8 @@
                 <p>Álbum de Fotos</p>
             </div>
             <div>
-                <a href="#"><img src="/imagens/small_logo.png"></a>
-                <p>Nomeados e Vencedores</p>
+                <a href="https://nei.dei.uc.pt/pixeldouro/2014"><img src="/imagens/small_logo.png"></a>
+                <p>Site</p>
             </div>
         </div>
         <h2 id="2013">2013</h2>
@@ -96,8 +109,8 @@
                 <p>Álbum de Fotos</p>
             </div>
             <div>
-                <a href="#"><img src="/imagens/small_logo.png"></a>
-                <p>Nomeados e Vencedores</p>
+                <a href="https://nei.dei.uc.pt/pixeldouro/2013"><img src="/imagens/small_logo.png"></a>
+                <p>Site</p>
             </div>
         </div>
     </section>
@@ -105,3 +118,20 @@
         <p>Made with ❤ by NEI/AAC</p>
     </footer>
 </body>
+
+</html>
+<script>
+    var temp = 0;
+    $("#mobile").click(function () {
+        if (temp % 2 == 0) {
+            $("#mobile-navbar").css("display", "flex");
+            $("#mobile").attr("src", "imagens/close.svg");
+            $("html").css("overflow-y", "hidden");
+        } else {
+            $("#mobile-navbar").css("display", "none");
+            $('#mobile').attr('src', 'imagens/hamburguer.svg');
+            $("html").css("overflow-y", "scroll");
+        }
+        temp++;
+    });
+</script>

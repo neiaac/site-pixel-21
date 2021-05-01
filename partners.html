@@ -21,6 +21,17 @@
             </ul>
         </nav>
     </header>
+    <nav class="mobile">
+      <a href="index.html">
+          <img src="imagens/small_logo.png" alt="logo">
+      </a>
+      <img id="mobile" src="imagens/hamburguer.svg" alt="Open Navbar">
+      <div id="mobile-navbar">
+          <a href="nominees.html">Nomeados</a>
+          <a href="past.html">Edições Anteriores</a>
+          <a href="partners.html">Parceiros</a>
+      </div>
+  </nav>
     <section>
         <h1>Parceiros</h1>
         <p class="description">Fica a conhecer os parceiros que tornaram esta gala possível!</p>
@@ -30,38 +41,41 @@
               <img src="/imagens/sponsors/redlight.png">
             </button>   
           </div>
-          <p class="description">A RedLight é uma empresa de desenvolvimento de software sediada em Coimbra e a sua missão é ajudar outras empresas a criar produtos de software de sucesso, numa relação colaborativa e com a máxima transparência e uma excelente comunicação com o cliente.</p>
+          <p class="description">We are a group of people that think digital and take daily showers of light on sunny Portugal. We started in Coimbra but we have clients all around the world.
+            Our mission is to help companies create successful software products in a collaborative relationship.
+            RedLight's process relies heavily on a constant stream of communication between our team and our clients, keeping clear expectations at all times.
+            </p>
         </div>
         <div class="partners">
           <div>
-            <button class="active">
+            <button class="active" id="critical">
               <img src="/imagens/sponsors/critical.png">
             </button>
-            <button>
+            <button id="imaginary">
               <img src="/imagens/sponsors/imaginary.svg">
             </button>
           </div>
-          <p class="description" id="silver">A Critical Software é uma empresa de software, sistemas de informação e de implantação internacional portuguesa, especializada em oferecer soluções, serviços e tecnologias fiáveis para sistemas de informação.</p>
+          <p class="description" id="silver">Working at Critical Software is more than just a job: here, you can really make a difference. We’re on a mission to make the world a better and safer place, just like real superheroes. We build rock-solid software for leading industries’ most critical applications, so every line of code we write and every idea we think of can affect the lives of millions. Now, we’re looking for talented engineers to embrace this mission that can take you to places you never imagined. You will have the opportunity to participate in challenging projects ranging from Aeronautics to Railway or Space – and more! Sound like you? Then it’s time to challenge your limits. It’s time to power up your career. It’s time you joined Critical Software.</p>
         </div>
         <div class="partners">
           <div>
-            <button class="active">
-              <img class="active" src="/imagens/sponsors/bit.png">
+            <button class="active" id="bit">
+              <img src="/imagens/sponsors/bit.png">
             </button>
-            <button>
+            <button id="esa">
               <img src="/imagens/sponsors/esa.png">
             </button>
-            <button>
+            <button id="feedzai">
               <img src="/imagens/sponsors/feedzai.png">
             </button>
-            <button>
+            <button id="ubiwhere">
               <img src="/imagens/sponsors/ubiwhere.png">
             </button>
-            <button>
+            <button id="oreyeon">
               <img src="/imagens/sponsors/oreyeon.png">
             </button>
           </div>
-          <p class="description" id="bronze">A BIT (Business Information Technology), área de Sistemas de Informação da Sonae MC, é responsável por criar novas soluções tecnológicas, e tem como objetivo contribuir para a evolução da experiência de retalho dos seus clientes.</p>
+          <p class="description" id="bronze">Na Sonae MC, antecipamos o futuro todos os dias! A BIT – Business Information Technology – é a nossa área de Sistemas de Informação, responsável por criar novas soluções, contribuindo para a evolução da experiência de retalho que queremos oferecer aos nossos Clientes. Um grupo de pessoas que vive para os avanços tecnológicos, criando ferramentas de gestão e decisão rápidas e coesas, adaptadas aos diferentes negócios.</p>
         </div>
         <div class="partners">
           <div>
@@ -69,7 +83,12 @@
               <img src="/imagens/sponsors/celfocus.png">
             </button>
           </div>
-          <p class="description">A Celfocus é uma empresa cujo principal objetivo é desenvolver soluções tecnológicas para que os seus clientes passem pela sua Transformação Digital, de modo a que estes enfrentem os mais inovadores e complexos desafios.</p>
+          <p class="description">Celfocus delivers high-tech system integration services in the digital and cognitive space. 
+            We develop and implement technology solutions that help clients undergo their Digital Transformation, by delivering digital solutions to addressing the most innovative, complex and mission-critical challenges. 
+            Our agile delivery methodology is tailored to reduce risk in IT projects and achieve the 100% success rate. To do that, we do not start projects from scratch. We have a solid vision of what does and doesn’t work, based on two pillars: our customer centric architecture and our evolving reusable components (using our own technology or assembling technology from other vendors). 
+            Founded in 2000, Celfocus is fully owned by Novabase, the largest Portuguese Information Technology Company, listed on the Euronext Lisbon Stock Exchange. Celfocus was initially a joint venture between Novabase and Vodafone Portugal. 
+            Serving Clients in 25+ countries, Celfocus helps organizations transform their business in order to improve competitive positioning and ultimately their performance. 
+            </p>
         </div>
     </section>
     <footer>
@@ -84,10 +103,56 @@
       if(target.is("button")) {
         target.parent().children().removeClass("active");
         target.addClass("active");
+        var sponsor = target.attr('id');
+        if(sponsor === "bit") {
+          $("#bronze").html("Na Sonae MC, antecipamos o futuro todos os dias! A BIT – Business Information Technology – é a nossa área de Sistemas de Informação, responsável por criar novas soluções, contribuindo para a evolução da experiência de retalho que queremos oferecer aos nossos Clientes. Um grupo de pessoas que vive para os avanços tecnológicos, criando ferramentas de gestão e decisão rápidas e coesas, adaptadas aos diferentes negócios.");
+        } else if(sponsor === "esa") {
+          $("#bronze").html("ESA Space Solutions Portugal is a “one-stop-shop” for space opportunities and re-purposing space technology. By exploiting space know-how, facilitating and inspiring its use in new applications and sharing this knowledge we bring ‘space down to Earth’.");
+        } else if(sponsor === "feedzai") {
+          $("#bronze").html("Feedzai is the market leader in fighting fraud with AI. We’re coding the future of commerce with today’s most advanced risk management platform powered by big data and machine learning. Founded and developed by data scientists and aerospace engineers, Feedzai has one mission: to make banking and commerce safe. The world’s largest banks, processors, and retailers use Feedzai’s fraud prevention and anti-money laundering products to manage risk, while improving customer experience.");
+        } else if(sponsor === "ubiwhere") {
+          $("#bronze").html("Fundada em 2007, a Ubiwhere é uma empresa de software focada na investigação e desenvolvimento de soluções tecnológicas inovadoras, orientadas para as áreas das Smart Cities, Telecomunicações e Internet do Futuro e Novas Tecnologias. Por sermos uma empresa tecnológica, a nossa equipa é um dos nossos fatores diferenciadores. A equipa (mais de 60 colaboradores), é um dos pilares do sucesso da empresa e está preparada para enfrentar os maiores desafios do mercado. A Ubiwhere coopera com uma ampla rede tecnológica a nível nacional e internacional, que valoriza e reconhece a contribuição de grande escala da Ubiwhere nos seus projetos criativos e inovadores. A empresa mantém ainda uma aposta contínua em assegurar as melhores práticas ao nível da gestão da qualidade tendo sido reconhecida através de certificações como a ISO9001 e CMMI Nível 3. Temos o desejo de mudar o Mundo, razão pela qual criamos, desenhamos e implementamos soluções que visam melhorar a qualidade de vida das pessoas.");
+        } else if(sponsor === "oreyeon") {
+          $("#bronze").html("Oreyeon is a startup developing cutting-edge solutions enabling the aerospace industry to optimize its security and safety. Our first goal is to re-imagine airport safety by implementing proactive features, eliminating human error and reducing costs through the use of Artificial Intelligence.");
+        } else if(sponsor === "critical") {
+          $("#silver").html("Working at Critical Software is more than just a job: here, you can really make a difference. We’re on a mission to make the world a better and safer place, just like real superheroes. We build rock-solid software for leading industries’ most critical applications, so every line of code we write and every idea we think of can affect the lives of millions. Now, we’re looking for talented engineers to embrace this mission that can take you to places you never imagined. You will have the opportunity to participate in challenging projects ranging from Aeronautics to Railway or Space – and more! Sound like you? Then it’s time to challenge your limits. It’s time to power up your career. It’s time you joined Critical Software.");
+        } else if(sponsor === "imaginary") {
+          $("#silver").html("Imaginary Cloud is a Software Development and UX/UI Design company that helped design, build, launch, and scale 200+ web and mobile applications. With offices in Portugal (Lisbon and Coimbra) and in the UK (London), we have been designing and developing innovative digital products for more than 10 years. At Imaginary Cloud, we believe in making people's lives easier through technology, and we are proud to say we are a very talented team with mindful creativity.");
+        }
       } else {
         target.parent().parent().children().removeClass("active");
         target.parent().addClass("active");
+        var sponsor = target.parent().attr('id');
+        if(sponsor === "bit") {
+          $("#bronze").html("Na Sonae MC, antecipamos o futuro todos os dias! A BIT – Business Information Technology – é a nossa área de Sistemas de Informação, responsável por criar novas soluções, contribuindo para a evolução da experiência de retalho que queremos oferecer aos nossos Clientes. Um grupo de pessoas que vive para os avanços tecnológicos, criando ferramentas de gestão e decisão rápidas e coesas, adaptadas aos diferentes negócios.");
+        } else if(sponsor === "esa") {
+          $("#bronze").html("ESA Space Solutions Portugal is a “one-stop-shop” for space opportunities and re-purposing space technology. By exploiting space know-how, facilitating and inspiring its use in new applications and sharing this knowledge we bring ‘space down to Earth’.");
+        } else if(sponsor === "feedzai") {
+          $("#bronze").html("Feedzai is the market leader in fighting fraud with AI. We’re coding the future of commerce with today’s most advanced risk management platform powered by big data and machine learning. Founded and developed by data scientists and aerospace engineers, Feedzai has one mission: to make banking and commerce safe. The world’s largest banks, processors, and retailers use Feedzai’s fraud prevention and anti-money laundering products to manage risk, while improving customer experience.");
+        } else if(sponsor === "ubiwhere") {
+          $("#bronze").html("Fundada em 2007, a Ubiwhere é uma empresa de software focada na investigação e desenvolvimento de soluções tecnológicas inovadoras, orientadas para as áreas das Smart Cities, Telecomunicações e Internet do Futuro e Novas Tecnologias. Por sermos uma empresa tecnológica, a nossa equipa é um dos nossos fatores diferenciadores. A equipa (mais de 60 colaboradores), é um dos pilares do sucesso da empresa e está preparada para enfrentar os maiores desafios do mercado. A Ubiwhere coopera com uma ampla rede tecnológica a nível nacional e internacional, que valoriza e reconhece a contribuição de grande escala da Ubiwhere nos seus projetos criativos e inovadores. A empresa mantém ainda uma aposta contínua em assegurar as melhores práticas ao nível da gestão da qualidade tendo sido reconhecida através de certificações como a ISO9001 e CMMI Nível 3. Temos o desejo de mudar o Mundo, razão pela qual criamos, desenhamos e implementamos soluções que visam melhorar a qualidade de vida das pessoas.");
+        } else if(sponsor === "oreyeon") {
+          $("#bronze").html("Oreyeon is a startup developing cutting-edge solutions enabling the aerospace industry to optimize its security and safety. Our first goal is to re-imagine airport safety by implementing proactive features, eliminating human error and reducing costs through the use of Artificial Intelligence.");
+        } else if(sponsor === "critical") {
+          $("#silver").html("Working at Critical Software is more than just a job: here, you can really make a difference. We’re on a mission to make the world a better and safer place, just like real superheroes. We build rock-solid software for leading industries’ most critical applications, so every line of code we write and every idea we think of can affect the lives of millions. Now, we’re looking for talented engineers to embrace this mission that can take you to places you never imagined. You will have the opportunity to participate in challenging projects ranging from Aeronautics to Railway or Space – and more! Sound like you? Then it’s time to challenge your limits. It’s time to power up your career. It’s time you joined Critical Software.");
+        } else if(sponsor === "imaginary") {
+          $("#silver").html("Imaginary Cloud is a Software Development and UX/UI Design company that helped design, build, launch, and scale 200+ web and mobile applications. With offices in Portugal (Lisbon and Coimbra) and in the UK (London), we have been designing and developing innovative digital products for more than 10 years. At Imaginary Cloud, we believe in making people's lives easier through technology, and we are proud to say we are a very talented team with mindful creativity.");
+        }
       }
     });
 })
+
+var temp = 0;
+$("#mobile").click(function () {
+    if (temp % 2 == 0) {
+        $("#mobile-navbar").css("display", "flex");
+        $("#mobile").attr("src", "imagens/close.svg");
+        $("html").css("overflow-y", "hidden");
+    } else {
+        $("#mobile-navbar").css("display", "none");
+        $('#mobile').attr('src', 'imagens/hamburguer.svg');
+        $("html").css("overflow-y", "scroll");
+    }
+    temp++;
+});
 </script>
