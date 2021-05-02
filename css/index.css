@@ -35,7 +35,7 @@
     width: 75%;
     border-left: 0.25rem solid;
     border-image: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%) 1;
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
 .winners > div {
@@ -68,10 +68,10 @@
 }
 
 .partners > div > div {
-    width: 100%;
     height: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 0.25rem solid;
     border-image: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%) 1;
     background-color: white;
