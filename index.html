@@ -4,22 +4,22 @@
 <head>
     <title>Pixel D'Ouro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js">
+    </script>
     <script src="https://code.createjs.com/easeljs-0.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-f59ea21a-63b7-0d73-739e-cef333f59c7f" crossorigin=""></script>
-    
 </head>
 
 <body>
-    
     <header>
         <a href="index.html">
-            <img src="imagens/small_logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo">
         </a>
         <nav>
             <a href="nominees.html">Nomeados</a>
@@ -29,9 +29,9 @@
     </header>
     <nav class="mobile">
         <a href="index.html">
-            <img src="imagens/small_logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo">
         </a>
-        <img id="mobile" src="imagens/hamburguer.svg" alt="Open Navbar">
+        <img id="mobile" src="images/hamburguer.svg" alt="Open Navbar">
         <div id="mobile-navbar">
             <a href="nominees.html">Nomeados</a>
             <a href="past.html">Edições Anteriores</a>
@@ -40,8 +40,7 @@
     </nav>
     <canvas id="projector">Your browser does not support the Canvas element.</canvas>
     <section class="hero">
-        <img src="/imagens/hero.svg" alt="Logo Pixel">
-        
+        <img src="/images/hero.svg" alt="Logo Pixel">
     </section>
     <section class="gala">
         <h2>Gala Pixel d’Ouro</h2>
@@ -60,9 +59,9 @@
                     Gostaríamos de contar com a tua presença neste evento que continua a ganhar mais adeptos, ano após
                     ano!
                 </p>
-                <a href="#">Ver regulamento</a>
+                <a href="regulamento.pdf" target="_blank">Ver regulamento</a>
             </div>
-            <img src="/imagens/foto-gala.png">
+            <img src="/images/foto-gala.png" alt="Foto da Gala 2019">
         </div>
     </section>
     <section class="rules">
@@ -90,25 +89,47 @@
                     presente ano lectivo no Departamento de Engenharia Informática e não tiver vencido a respectiva
                     categoria nos últimos dois anos lectivos.</p>
             </div>
+            <div>
+                <h3>Criador do Ano</h3>
+                <p>A categoria de “Criador do Ano” pretende contemplar alguma figura do Departamento de Engenharia Informática, 
+                    que durante o presente ano letivo, tenha dado a conhecer trabalho externo/projetos pessoais, 
+                    sendo esta um estudante inscrito no presente ano letivo nos cursos representados pelo NEI/AAC ou 
+                    tendo executado funções como docente ou não-docente.</p>
+            </div>
+            <div>
+                <h3>Costas Largas do Ano</h3>
+                <p>A categoria de “Costas Largas do Ano” pretende contemplar alguma figura do Departamento de Engenharia Informática, 
+                    que durante o presente ano letivo, tenha sido uma mais valia ao auxiliar colegas em questões relacionadas com 
+                    cadeiras do respectivo curso, sendo esta um estudante inscrito no presente ano letivo nos cursos representados pelo NEI/AAC. 
+                    A qualidade e quantidade do auxílio são termos de avaliação a ter em consideração.</p>
+            </div>
+            <div>
+                <h3>Fundos Zoom do Ano</h3>
+                <p>A categoria de “Fundo Zoom do Ano” pretende contemplar alguma figura do Departamento de Engenharia Informática, 
+                    que durante o presente ano letivo, tenha usado durante atividades letivas ou extracurriculares relacionadas com 
+                    o Departamento de Engenharia Informática, um fundo de Zoom considerado original, sendo esta um estudante inscrito 
+                    no presente ano letivo nos cursos representados pelo NEI/AAC, assim como por investigadores e funcionários, 
+                    por sufrágio direto, presencial, secreto e universal.</p>
+            </div>
         </div>
     </section>
     <section class="winners">
         <h2>Vencedores de Edições Passadas</h2>
         <div>
             <div>
-                <img src="/imagens/Sofia Meireles 1.png">
+                <img src="/images/sofiameireles.png" alt="Foto da vencedora do prémio de Caloira do Ano LEI">
                 <p>Caloiros</p>
             </div>
             <div>
-                <img src="/imagens/Ernesto Costa 1.png">
+                <img src="/images/ernestocosta.png" alt="Foto da vencedora do prémio de Docente do Ano">
                 <p>Docentes</p>
             </div>
             <div>
-                <img src="/imagens/Dona Joana 1.png">
+                <img src="/images/donajoana.png" alt="Foto da vencedora do prémio de Funcionário do Ano">
                 <p>Funcionários</p>
             </div>
             <div>
-                <img src="/imagens/Manuel Matos 1.png">
+                <img src="/images/manuelmatos.png" alt="Foto da vencedora do prémio de Personalidade do Ano">
                 <p>Personalidades</p>
             </div>
         </div>
@@ -116,289 +137,371 @@
     <section class="partners">
         <h2>Parceiros</h2>
         <div>
-            <div class="redlight">
-                <img src="/imagens/sponsors/redlight.png">
-            </div>
-            <div class="celfocus">
-                <img src="/imagens/sponsors/celfocus.png">
-            </div>
-            <div class="critical">
-                <img src="/imagens/sponsors/critical.png">
-            </div>
-            <div class="imaginary">
-                <img src="/imagens/sponsors/imaginary.svg">
-            </div>
-            <div class="oreyeon">
-                <img src="/imagens/sponsors/oreyeon.png">
-            </div>
-            <div class="feedzai">
-                <img src="/imagens/sponsors/feedzai.png">
-            </div>
-            <div class="bit">
-                <img src="/imagens/sponsors/bit.png">
-            </div>
-            <div class="ubiwhere">
-                <img src="/imagens/sponsors/ubiwhere.png">
-            </div>
-            <div class="esa">
-                <img src="/imagens/sponsors/esa.png">
-            </div>
+            <a href="https://www.redlight.dev/" targe="_blank" class="redlight">
+                <img src="/images/sponsors/redlight.png">
+            </a>
+            <a href="https://www.celfocus.com/home/index.php" targe="_blank" class="celfocus">
+                <img src="/images/sponsors/celfocus.png">
+            </a>
+            <a href="https://www.criticalsoftware.com/pt" targe="_blank" class="critical">
+                <img src="/images/sponsors/critical.png">
+            </a>
+            <a href="https://web.imaginarycloud.com/" targe="_blank" class="imaginary">
+                <img src="/images/sponsors/imaginary.svg">
+            </a>
+            <a href="https://www.oreyeon.com/" targe="_blank" class="oreyeon">
+                <img src="/images/sponsors/oreyeon.png">
+            </a>
+            <a href="https://feedzai.com/" targe="_blank" class="feedzai">
+                <img src="/images/sponsors/feedzai.png">
+            </a>
+            <a href="https://www.linkedin.com/showcase/bit-sonae/?originalSubdomain=pt" targe="_blank" class="bit">
+                <img src="/images/sponsors/bit.png">
+            </a>
+            <a href="https://www.ubiwhere.com/" targe="_blank" class="ubiwhere">
+                <img src="/images/sponsors/ubiwhere.png">
+            </a>
+            <a href="https://space.ipn.pt/" targe="_blank" class="esa">
+                <img src="/images/sponsors/esa.png">
+            </a>
         </div>
         <a href="partners.html">Descobre mais</a>
     </section>
     <footer>
-        <p>Made with ❤ by NEI/AAC</p>
+        <p>Made with ❤ by <a href="https://nei.dei.uc.pt/" target="_blank">NEI/AAC</a></p>
     </footer>
-    <script>$(window).on("load",function() {
-        function fade(pageLoad) {
-          var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
-          var min=0, max=1, threshold=0.01;
-          
-          $("section").each(function() {
-            /* Check the location of each desired element */
-            var objectHeight=$(this).outerHeight(), objectTop=$(this).offset().top, objectBottom=$(this).offset().top+objectHeight;
-            
-            /* Fade element in/out based on its visible percentage */
-            if (objectTop < windowTop) {
-              if (objectBottom > windowTop) {$(this).fadeTo(0,min+((max-min)*((objectBottom-windowTop)/objectHeight)));}
-              else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
-            } else if (objectBottom > windowBottom) {
-              if (objectTop < windowBottom) {$(this).fadeTo(0,min+((max-min)*((windowBottom-objectTop)/objectHeight)));}
-              else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
-            } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);}
-          });
-        } fade(true); //fade elements on page-load
-        $(window).scroll(function(){fade(false);}); //fade elements on scroll
-      });</script>
-
-    <script>
-        var ParticleEngine = (function() {
-	'use strict';
-
-	function ParticleEngine(canvas_id) {
-		// enforces new
-		if (!(this instanceof ParticleEngine)) {
-			return new ParticleEngine(args);
-		}
-		
-		var _ParticleEngine = this;
-
-		this.canvas_id = canvas_id;
-		this.stage = new createjs.Stage(canvas_id);
-		this.totalWidth = this.canvasWidth = document.getElementById(canvas_id).width = document.getElementById(canvas_id).offsetWidth;
-		this.totalHeight = this.canvasHeight = document.getElementById(canvas_id).height = document.getElementById(canvas_id).offsetHeight;
-		this.compositeStyle = "lighter";
-
-		this.particleSettings = [{id:"small", num:500, fromX:0, toX:this.totalWidth, ballwidth:3, alphamax:0.4, areaHeight:.5, color:"#FFE996", fill:false}, 
-								{id:"medium", num:300, fromX:0, toX:this.totalWidth,  ballwidth:8, alphamax:0.3, areaHeight:1, color:"#FFE996", fill:true}, 
-								{id:"large", num:50, fromX:0, toX:this.totalWidth, ballwidth:30,  alphamax:0.2, areaHeight:1, color:"#FFE996", fill:true}];
-		this.particleArray = [];
-		this.lights = [{ellipseWidth:200, ellipseHeight:50, alpha:0.6, offsetX:0, offsetY:40-100, color:"#FDF8C1"}, 
-						{ellipseWidth:175, ellipseHeight:125, alpha:0.3, offsetX:0, offsetY:0-100, color:"#FDF8C1"}, 
-						{ellipseWidth:50, ellipseHeight:40, alpha:0.2, offsetX:80, offsetY:-50-100, color:"#FDF8C1"}];
-
-		this.stage.compositeOperation = _ParticleEngine.compositeStyle;
-
-
-		function drawBgLight()
-		{
-			var light;
-			var bounds;
-			var blurFilter;
-			for (var i = 0, len = _ParticleEngine.lights.length; i < len; i++) {				
-				light = new createjs.Shape();
-				light.graphics.beginFill(_ParticleEngine.lights[i].color).drawEllipse(0, 0, _ParticleEngine.lights[i].ellipseWidth, _ParticleEngine.lights[i].ellipseHeight);
-				light.regX = _ParticleEngine.lights[i].ellipseWidth/2;
-				light.regY = _ParticleEngine.lights[i].ellipseHeight/2; 
-				light.y = light.initY = _ParticleEngine.totalHeight/2 + _ParticleEngine.lights[i].offsetY;
-				light.x = light.initX =_ParticleEngine.totalWidth/2 + _ParticleEngine.lights[i].offsetX;
-
-				blurFilter = new createjs.BlurFilter(_ParticleEngine.lights[i].ellipseWidth, _ParticleEngine.lights[i].ellipseHeight, 1);
-				bounds = blurFilter.getBounds();
-				light.filters = [blurFilter];
-				light.cache(bounds.x-_ParticleEngine.lights[i].ellipseWidth/2, bounds.y-_ParticleEngine.lights[i].ellipseHeight/2, bounds.width*2, bounds.height*2);
-				light.alpha = _ParticleEngine.lights[i].alpha;
-
-				light.compositeOperation = "screen";
-				_ParticleEngine.stage.addChildAt(light, 0);
-
-				_ParticleEngine.lights[i].elem = light;
-			}
-
-			TweenMax.fromTo(_ParticleEngine.lights[0].elem, 10, {scaleX:1.5, x:_ParticleEngine.lights[0].elem.initX, y:_ParticleEngine.lights[0].elem.initY},{yoyo:true, repeat:-1, ease:Power1.easeInOut, scaleX:2, scaleY:0.7});
-			TweenMax.fromTo(_ParticleEngine.lights[1].elem, 12, { x:_ParticleEngine.lights[1].elem.initX, y:_ParticleEngine.lights[1].elem.initY},{delay:5, yoyo:true, repeat:-1, ease:Power1.easeInOut, scaleY:2, scaleX:2, y:_ParticleEngine.totalHeight/2-50, x:_ParticleEngine.totalWidth/2+100});
-			TweenMax.fromTo(_ParticleEngine.lights[2].elem, 8, { x:_ParticleEngine.lights[2].elem.initX, y:_ParticleEngine.lights[2].elem.initY},{delay:2, yoyo:true, repeat:-1, ease:Power1.easeInOut, scaleY:1.5, scaleX:1.5, y:_ParticleEngine.totalHeight/2, x:_ParticleEngine.totalWidth/2-200});
-		}
-		
-		var blurFilter;
-		function drawParticles(){
-
-			for (var i = 0, len = _ParticleEngine.particleSettings.length; i < len; i++) {
-				var ball = _ParticleEngine.particleSettings[i];
-
-				var circle;
-				for (var s = 0; s < ball.num; s++ )
-				{
-					circle = new createjs.Shape();
-					if(ball.fill){
-						circle.graphics.beginFill(ball.color).drawCircle(0, 0, ball.ballwidth);
-						blurFilter = new createjs.BlurFilter(ball.ballwidth/2, ball.ballwidth/2, 1);
-						circle.filters = [blurFilter];
-						var bounds = blurFilter.getBounds();
-						circle.cache(-50+bounds.x, -50+bounds.y, 100+bounds.width, 100+bounds.height);
-					}else{
-						circle.graphics.beginStroke(ball.color).setStrokeStyle(1).drawCircle(0, 0, ball.ballwidth);
-					}
-					
-					circle.alpha = range(0, 0.1);
-					circle.alphaMax = ball.alphamax;
-					circle.distance = ball.ballwidth * 2;
-					circle.ballwidth = ball.ballwidth;
-					circle.flag = ball.id;
-					_ParticleEngine.applySettings(circle, ball.fromX, ball.toX, ball.areaHeight);
-					circle.speed = range(2, 10);
-					circle.y = circle.initY;
-					circle.x = circle.initX;
-					circle.scaleX = circle.scaleY = range(0.3, 1);
-
-					_ParticleEngine.stage.addChild(circle);
-					
-
-					animateBall(circle);
-
-					_ParticleEngine.particleArray.push(circle);
-				}
-			}	
-		}
-
-		this.applySettings = function(circle, positionX, totalWidth, areaHeight)
-		{
-			circle.speed = range(1, 3);
-			circle.initY = weightedRange(0, _ParticleEngine.totalHeight , 1, [_ParticleEngine.totalHeight * (2-areaHeight/2)/4, _ParticleEngine.totalHeight*(2+areaHeight/2)/4], 0.8 );
-			circle.initX = weightedRange(positionX, totalWidth, 1, [positionX+ ((totalWidth-positionX))/4, positionX+ ((totalWidth-positionX)) * 3/4], 0.6);
-		}
-
-		function animateBall(ball)
-		{
-			var scale = range(0.3, 1);
-			var xpos = range(ball.initX - ball.distance, ball.initX + ball.distance);
-			var ypos = range(ball.initY - ball.distance, ball.initY + ball.distance);
-			var speed = ball.speed;
-			TweenMax.to(ball, speed, {scaleX:scale, scaleY:scale, x:xpos, y:ypos, onComplete:animateBall, onCompleteParams:[ball], ease:Cubic.easeInOut});	
-			TweenMax.to(ball, speed/2, {alpha:range(0.1, ball.alphaMax), onComplete:fadeout, onCompleteParams:[ball, speed]});	
-		}	
-
-		function fadeout(ball, speed)
-		{
-			ball.speed = range(2, 10);
-			TweenMax.to(ball, speed/2, {alpha:0 });
-		}
-
-		drawBgLight();
-		drawParticles();
-	}
-
-	ParticleEngine.prototype.render = function()
-	{
-		this.stage.update();
-	}
-
-	ParticleEngine.prototype.resize = function()
-	{
-		this.totalWidth = this.canvasWidth = document.getElementById(this.canvas_id).width = document.getElementById(this.canvas_id).offsetWidth;
-		this.totalHeight = this.canvasHeight = document.getElementById(this.canvas_id).height = document.getElementById(this.canvas_id).offsetHeight;
-		this.render();
-
-		for (var i= 0, length = this.particleArray.length; i < length; i++)
-		{
-			this.applySettings(this.particleArray[i], 0, this.totalWidth, this.particleArray[i].areaHeight);
-		}
-
-		for (var j = 0, len = this.lights.length; j < len; j++) {
-			this.lights[j].elem.initY = this.totalHeight/2 + this.lights[j].offsetY;
-			this.lights[j].elem.initX =this.totalWidth/2 + this.lights[j].offsetX;
-			TweenMax.to(this.lights[j].elem, .5, {x:this.lights[j].elem.initX, y:this.lights[j].elem.initY});			
-		}
-	}
-
-	return ParticleEngine;
-
-}());
-
-
-////////////////////////UTILS//////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-
-function range(min, max)
-{
-	return min + (max - min) * Math.random();
-}
-		
-function round(num, precision)
-{
-   var decimal = Math.pow(10, precision);
-   return Math.round(decimal* num) / decimal;
-}
-
-function weightedRange(to, from, decimalPlaces, weightedRange, weightStrength)
-{
-	if (typeof from === "undefined" || from === null) { 
-	    from = 0; 
-	}
-	if (typeof decimalPlaces === "undefined" || decimalPlaces === null) { 
-	    decimalPlaces = 0; 
-	}
-	if (typeof weightedRange === "undefined" || weightedRange === null) { 
-	    weightedRange = 0; 
-	}
-	if (typeof weightStrength === "undefined" || weightStrength === null) { 
-	    weightStrength = 0; 
-	}
-
-   var ret
-   if(to == from){return(to);}
- 
-   if(weightedRange && Math.random()<=weightStrength){
-	  ret = round( Math.random()*(weightedRange[1]-weightedRange[0]) + weightedRange[0], decimalPlaces )
-   }else{
-	  ret = round( Math.random()*(to-from)+from, decimalPlaces )
-   }
-   return(ret);
-}
-
-///////////////// RUN CODE //////////////////////////
-//////////////////////////////////////////////////////
-
-var particles
-(function(){
-	particles = new ParticleEngine('projector');
-	createjs.Ticker.addEventListener("tick", updateCanvas);
-	window.addEventListener('resize', resizeCanvas, false);
-
-	function updateCanvas(){
-		particles.render();
-	}
-
-	function resizeCanvas(){
-		particles.resize();
-	}
-}());
-    </script>
 </body>
 
 </html>
 <script>
-var temp = 0;
-$("#mobile").click(function () {
-    if (temp % 2 == 0) {
-        $("#mobile-navbar").css("display", "flex");
-        $("#mobile").attr("src", "imagens/close.svg");
-        $("html").css("overflow-y", "hidden");
-    } else {
-        $("#mobile-navbar").css("display", "none");
-        $('#mobile').attr('src', 'imagens/hamburguer.svg');
-        $("html").css("overflow-y", "scroll");
+    var temp = 0;
+    $("#mobile").click(function () {
+        if (temp % 2 == 0) {
+            $("#mobile-navbar").css("display", "flex");
+            $("#mobile").attr("src", "images/close.svg");
+            $("html").css("overflow-y", "hidden");
+        } else {
+            $("#mobile-navbar").css("display", "none");
+            $('#mobile').attr('src', 'images/hamburguer.svg');
+            $("html").css("overflow-y", "scroll");
+        }
+        temp++;
+    });
+
+    var ParticleEngine = (function () {
+        'use strict';
+
+        function ParticleEngine(canvas_id) {
+            // enforces new
+            if (!(this instanceof ParticleEngine)) {
+                return new ParticleEngine(args);
+            }
+
+            var _ParticleEngine = this;
+
+            this.canvas_id = canvas_id;
+            this.stage = new createjs.Stage(canvas_id);
+            this.totalWidth = this.canvasWidth = document.getElementById(canvas_id).width = document
+                .getElementById(canvas_id).offsetWidth;
+            this.totalHeight = this.canvasHeight = document.getElementById(canvas_id).height = document
+                .getElementById(canvas_id).offsetHeight;
+            this.compositeStyle = "lighter";
+
+            this.particleSettings = [{
+                    id: "small",
+                    num: 500,
+                    fromX: 0,
+                    toX: this.totalWidth,
+                    ballwidth: 3,
+                    alphamax: 0.4,
+                    areaHeight: .5,
+                    color: "#FFE996",
+                    fill: false
+                },
+                {
+                    id: "medium",
+                    num: 300,
+                    fromX: 0,
+                    toX: this.totalWidth,
+                    ballwidth: 8,
+                    alphamax: 0.3,
+                    areaHeight: 1,
+                    color: "#FFE996",
+                    fill: true
+                },
+                {
+                    id: "large",
+                    num: 50,
+                    fromX: 0,
+                    toX: this.totalWidth,
+                    ballwidth: 30,
+                    alphamax: 0.2,
+                    areaHeight: 1,
+                    color: "#FFE996",
+                    fill: true
+                }
+            ];
+            this.particleArray = [];
+            this.lights = [{
+                    ellipseWidth: 200,
+                    ellipseHeight: 50,
+                    alpha: 0.6,
+                    offsetX: 0,
+                    offsetY: 40 - 100,
+                    color: "#FDF8C1"
+                },
+                {
+                    ellipseWidth: 175,
+                    ellipseHeight: 125,
+                    alpha: 0.3,
+                    offsetX: 0,
+                    offsetY: 0 - 100,
+                    color: "#FDF8C1"
+                },
+                {
+                    ellipseWidth: 50,
+                    ellipseHeight: 40,
+                    alpha: 0.2,
+                    offsetX: 80,
+                    offsetY: -50 - 100,
+                    color: "#FDF8C1"
+                }
+            ];
+
+            this.stage.compositeOperation = _ParticleEngine.compositeStyle;
+
+
+            function drawBgLight() {
+                var light;
+                var bounds;
+                var blurFilter;
+                for (var i = 0, len = _ParticleEngine.lights.length; i < len; i++) {
+                    light = new createjs.Shape();
+                    light.graphics.beginFill(_ParticleEngine.lights[i].color).drawEllipse(0, 0, _ParticleEngine
+                        .lights[i].ellipseWidth, _ParticleEngine.lights[i].ellipseHeight);
+                    light.regX = _ParticleEngine.lights[i].ellipseWidth / 2;
+                    light.regY = _ParticleEngine.lights[i].ellipseHeight / 2;
+                    light.y = light.initY = _ParticleEngine.totalHeight / 2 + _ParticleEngine.lights[i].offsetY;
+                    light.x = light.initX = _ParticleEngine.totalWidth / 2 + _ParticleEngine.lights[i].offsetX;
+
+                    blurFilter = new createjs.BlurFilter(_ParticleEngine.lights[i].ellipseWidth, _ParticleEngine
+                        .lights[i].ellipseHeight, 1);
+                    bounds = blurFilter.getBounds();
+                    light.filters = [blurFilter];
+                    light.cache(bounds.x - _ParticleEngine.lights[i].ellipseWidth / 2, bounds.y -
+                        _ParticleEngine.lights[i].ellipseHeight / 2, bounds.width * 2, bounds.height * 2);
+                    light.alpha = _ParticleEngine.lights[i].alpha;
+
+                    light.compositeOperation = "screen";
+                    _ParticleEngine.stage.addChildAt(light, 0);
+
+                    _ParticleEngine.lights[i].elem = light;
+                }
+
+                TweenMax.fromTo(_ParticleEngine.lights[0].elem, 10, {
+                    scaleX: 1.5,
+                    x: _ParticleEngine.lights[0].elem.initX,
+                    y: _ParticleEngine.lights[0].elem.initY
+                }, {
+                    yoyo: true,
+                    repeat: -1,
+                    ease: Power1.easeInOut,
+                    scaleX: 2,
+                    scaleY: 0.7
+                });
+                TweenMax.fromTo(_ParticleEngine.lights[1].elem, 12, {
+                    x: _ParticleEngine.lights[1].elem.initX,
+                    y: _ParticleEngine.lights[1].elem.initY
+                }, {
+                    delay: 5,
+                    yoyo: true,
+                    repeat: -1,
+                    ease: Power1.easeInOut,
+                    scaleY: 2,
+                    scaleX: 2,
+                    y: _ParticleEngine.totalHeight / 2 - 50,
+                    x: _ParticleEngine.totalWidth / 2 + 100
+                });
+                TweenMax.fromTo(_ParticleEngine.lights[2].elem, 8, {
+                    x: _ParticleEngine.lights[2].elem.initX,
+                    y: _ParticleEngine.lights[2].elem.initY
+                }, {
+                    delay: 2,
+                    yoyo: true,
+                    repeat: -1,
+                    ease: Power1.easeInOut,
+                    scaleY: 1.5,
+                    scaleX: 1.5,
+                    y: _ParticleEngine.totalHeight / 2,
+                    x: _ParticleEngine.totalWidth / 2 - 200
+                });
+            }
+
+            var blurFilter;
+
+            function drawParticles() {
+
+                for (var i = 0, len = _ParticleEngine.particleSettings.length; i < len; i++) {
+                    var ball = _ParticleEngine.particleSettings[i];
+
+                    var circle;
+                    for (var s = 0; s < ball.num; s++) {
+                        circle = new createjs.Shape();
+                        if (ball.fill) {
+                            circle.graphics.beginFill(ball.color).drawCircle(0, 0, ball.ballwidth);
+                            blurFilter = new createjs.BlurFilter(ball.ballwidth / 2, ball.ballwidth / 2, 1);
+                            circle.filters = [blurFilter];
+                            var bounds = blurFilter.getBounds();
+                            circle.cache(-50 + bounds.x, -50 + bounds.y, 100 + bounds.width, 100 + bounds
+                                .height);
+                        } else {
+                            circle.graphics.beginStroke(ball.color).setStrokeStyle(1).drawCircle(0, 0, ball
+                                .ballwidth);
+                        }
+
+                        circle.alpha = range(0, 0.1);
+                        circle.alphaMax = ball.alphamax;
+                        circle.distance = ball.ballwidth * 2;
+                        circle.ballwidth = ball.ballwidth;
+                        circle.flag = ball.id;
+                        _ParticleEngine.applySettings(circle, ball.fromX, ball.toX, ball.areaHeight);
+                        circle.speed = range(2, 10);
+                        circle.y = circle.initY;
+                        circle.x = circle.initX;
+                        circle.scaleX = circle.scaleY = range(0.3, 1);
+
+                        _ParticleEngine.stage.addChild(circle);
+
+
+                        animateBall(circle);
+
+                        _ParticleEngine.particleArray.push(circle);
+                    }
+                }
+            }
+
+            this.applySettings = function (circle, positionX, totalWidth, areaHeight) {
+                circle.speed = range(1, 3);
+                circle.initY = weightedRange(0, _ParticleEngine.totalHeight, 1, [_ParticleEngine
+                    .totalHeight * (2 - areaHeight / 2) / 4, _ParticleEngine.totalHeight * (2 +
+                        areaHeight / 2) / 4
+                ], 0.8);
+                circle.initX = weightedRange(positionX, totalWidth, 1, [positionX + ((totalWidth -
+                    positionX)) / 4, positionX + ((totalWidth - positionX)) * 3 / 4], 0.6);
+            }
+
+            function animateBall(ball) {
+                var scale = range(0.3, 1);
+                var xpos = range(ball.initX - ball.distance, ball.initX + ball.distance);
+                var ypos = range(ball.initY - ball.distance, ball.initY + ball.distance);
+                var speed = ball.speed;
+                TweenMax.to(ball, speed, {
+                    scaleX: scale,
+                    scaleY: scale,
+                    x: xpos,
+                    y: ypos,
+                    onComplete: animateBall,
+                    onCompleteParams: [ball],
+                    ease: Cubic.easeInOut
+                });
+                TweenMax.to(ball, speed / 2, {
+                    alpha: range(0.1, ball.alphaMax),
+                    onComplete: fadeout,
+                    onCompleteParams: [ball, speed]
+                });
+            }
+
+            function fadeout(ball, speed) {
+                ball.speed = range(2, 10);
+                TweenMax.to(ball, speed / 2, {
+                    alpha: 0
+                });
+            }
+
+            drawBgLight();
+            drawParticles();
+        }
+
+        ParticleEngine.prototype.render = function () {
+            this.stage.update();
+        }
+
+        ParticleEngine.prototype.resize = function () {
+            this.totalWidth = this.canvasWidth = document.getElementById(this.canvas_id).width = document
+                .getElementById(this.canvas_id).offsetWidth;
+            this.totalHeight = this.canvasHeight = document.getElementById(this.canvas_id).height = document
+                .getElementById(this.canvas_id).offsetHeight;
+            this.render();
+
+            for (var i = 0, length = this.particleArray.length; i < length; i++) {
+                this.applySettings(this.particleArray[i], 0, this.totalWidth, this.particleArray[i]
+                    .areaHeight);
+            }
+
+            for (var j = 0, len = this.lights.length; j < len; j++) {
+                this.lights[j].elem.initY = this.totalHeight / 2 + this.lights[j].offsetY;
+                this.lights[j].elem.initX = this.totalWidth / 2 + this.lights[j].offsetX;
+                TweenMax.to(this.lights[j].elem, .5, {
+                    x: this.lights[j].elem.initX,
+                    y: this.lights[j].elem.initY
+                });
+            }
+        }
+
+        return ParticleEngine;
+
+    }());
+
+    ////////////////////////UTILS//////////////////////////////////////
+    function range(min, max) {
+        return min + (max - min) * Math.random();
     }
-    temp++;
-});
+
+    function round(num, precision) {
+        var decimal = Math.pow(10, precision);
+        return Math.round(decimal * num) / decimal;
+    }
+
+    function weightedRange(to, from, decimalPlaces, weightedRange, weightStrength) {
+        if (typeof from === "undefined" || from === null) {
+            from = 0;
+        }
+        if (typeof decimalPlaces === "undefined" || decimalPlaces === null) {
+            decimalPlaces = 0;
+        }
+        if (typeof weightedRange === "undefined" || weightedRange === null) {
+            weightedRange = 0;
+        }
+        if (typeof weightStrength === "undefined" || weightStrength === null) {
+            weightStrength = 0;
+        }
+
+        var ret
+        if (to == from) {
+            return (to);
+        }
+
+        if (weightedRange && Math.random() <= weightStrength) {
+            ret = round(Math.random() * (weightedRange[1] - weightedRange[0]) + weightedRange[0], decimalPlaces)
+        } else {
+            ret = round(Math.random() * (to - from) + from, decimalPlaces)
+        }
+        return (ret);
+    }
+
+    ///////////////// RUN CODE //////////////////////////
+    var particles
+    (function () {
+        particles = new ParticleEngine('projector');
+        createjs.Ticker.addEventListener("tick", updateCanvas);
+        window.addEventListener('resize', resizeCanvas, false);
+
+        function updateCanvas() {
+            particles.render();
+        }
+
+        function resizeCanvas() {
+            particles.resize();
+        }
+    }());
 </script>

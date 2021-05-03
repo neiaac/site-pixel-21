@@ -7,13 +7,22 @@
     margin: auto;
 }
 
-.gala > div{
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+}
+
+.gala>div {
     display: grid;
     gap: 2rem 6rem;
     grid-template-columns: 1fr 1fr;
 }
 
-.gala > div > div p {
+.gala>div>div p {
     margin-bottom: 2rem;
 }
 
@@ -21,14 +30,14 @@
     width: 100%;
 }
 
-.rules > div {
+.rules>div {
     display: grid;
     gap: 6em;
     grid: auto 1fr / 1fr 1fr;
 }
 
 .rules h3 {
-   margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .rules p {
@@ -38,7 +47,7 @@
     padding: 1rem;
 }
 
-.winners > div {
+.winners>div {
     display: grid;
     gap: 2rem;
     grid: 1fr / repeat(auto-fit, minmax(5rem, 1fr));
@@ -50,24 +59,24 @@
     margin-bottom: 2rem;
 }
 
-.partners > div {
+.partners>div {
     display: grid;
     gap: 1rem;
     grid-template-areas: "redlight redlight redlight redlight celfocus empty empty empty empty empty"
-                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
-                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
-                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
-                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
-                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
-                        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
-                        "redlight redlight redlight redlight critical critical critical imaginary imaginary imaginary"
-                        "redlight redlight redlight redlight critical critical critical imaginary imaginary imaginary"
-                        "oreyeon oreyeon feedzai feedzai bit bit ubiwhere ubiwhere esa esa"
-                        "oreyeon oreyeon feedzai feedzai bit bit ubiwhere ubiwhere esa esa";
+        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+        "redlight redlight redlight redlight celfocus empty empty empty empty empty"
+        "redlight redlight redlight redlight critical critical critical imaginary imaginary imaginary"
+        "redlight redlight redlight redlight critical critical critical imaginary imaginary imaginary"
+        "oreyeon oreyeon feedzai feedzai bit bit ubiwhere ubiwhere esa esa"
+        "oreyeon oreyeon feedzai feedzai bit bit ubiwhere ubiwhere esa esa";
     margin-bottom: 2rem;
 }
 
-.partners > div > div {
+.partners>div>a {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -133,29 +142,29 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .gala > div{
+    .gala>div {
         gap: 2rem;
         grid-template-columns: 1fr;
     }
 
-    .rules > div {
+    .rules>div {
         gap: 2rem;
         grid: auto auto auto 1fr / 1fr;
     }
 
     .rules h3 {
         margin-bottom: 1rem;
-     }
+    }
 
-    .winners > div {
+    .winners>div {
         grid: auto auto auto 1fr / 1fr;
     }
 
-    .partners > div {
+    .partners>div {
         grid-template-areas: "redlight redlight redlight redlight redlight redlight redlight redlight redlight redlight"
-                            "critical critical critical critical critical imaginary imaginary imaginary imaginary imaginary"
-                            "oreyeon oreyeon oreyeon feedzai feedzai feedzai esa esa esa empty"
-                            "bit bit bit ubiwhere ubiwhere ubiwhere empty2 empty2 empty2 empty"
-                            "celfocus celfocus empty3 empty3 empty3 empty3 empty2 empty2 empty2 empty"
+            "critical critical critical critical critical imaginary imaginary imaginary imaginary imaginary"
+            "oreyeon oreyeon oreyeon feedzai feedzai feedzai esa esa esa empty"
+            "bit bit bit ubiwhere ubiwhere ubiwhere empty2 empty2 empty2 empty"
+            "celfocus celfocus empty3 empty3 empty3 empty3 empty2 empty2 empty2 empty"
     }
-  }
+}

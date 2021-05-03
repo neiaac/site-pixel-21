@@ -1,4 +1,4 @@
-section{
+section {
     text-align: center;
 }
 
@@ -25,12 +25,14 @@ h2 {
     width: 100%;
 }
 
-.past img, .nominees img {
+.past img,
+.nominees img {
     border: 0.25rem solid;
     border-image: linear-gradient(180deg, #FDF8C1 0.18%, #FFE996 35.57%, #A47528 48.72%, #FFE996 63.51%, #FDF8C1 100%) 1;
 }
 
-.past p, .nominees p {
+.past p,
+.nominees p {
     margin-top: 1rem;
 }
 
@@ -47,19 +49,34 @@ h2 {
 .past img {
     width: 12rem;
     height: 12rem;
+    object-fit: cover;
 }
 
-.past div:last-child img {
-    border: 0.25rem solid black;
+.past div:last-child img:last-child {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    object-fit: contain;
 }
 
-.partners > div {
+.past:last-child div {
+    margin-right: 0;
+}
+
+.past:last-child div:last-child img {
+    width: 12rem;
+    height: 12rem;
+    padding: 0;
+    object-fit: cover;
+}
+
+.partners>div {
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;  
+    margin-bottom: 1rem;
 }
 
-.partners > div > button {
+.partners>div>button {
     width: 12rem;
     height: 12rem;
     display: grid;
@@ -83,7 +100,7 @@ h2 {
     line-height: 1.5rem;
 }
 
-.partners > div > button.active {
+.partners>div>button.active {
     opacity: 1;
 }
 
@@ -117,12 +134,12 @@ h2 {
         margin: 0 0 2rem 0;
     }
 
-    .partners > div {
+    .partners>div {
         flex-direction: column;
         align-items: center;
     }
 
-    .partners > div > button {
+    .partners>div>button {
         margin: 0 0 2rem 0;
     }
-  }
+}
